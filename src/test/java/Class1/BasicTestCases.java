@@ -1,5 +1,6 @@
 package Class1;
 
+import Helper.Misc;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -21,11 +22,7 @@ public class BasicTestCases {
         String urlFromWeb = driver.getCurrentUrl();
         Assert.assertEquals(urlFromWeb, url, " NFL is not not correct URL after launch");
 
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Misc.sleep(5);
 
         driver.quit();
 
