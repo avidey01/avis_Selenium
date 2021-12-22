@@ -84,7 +84,7 @@ public class Homework_1 {
         By messengerContinueButtonLocator= By.name(messengerContinueButtonAttValue);
         WebElement messengerContinueButton= Driver.getDriver().findElement(messengerContinueButtonLocator);
         boolean isMessengerContinueButtonEnable = messengerContinueButton.isEnabled();
-        boolean isMessengerContinueButtonDisplaying=messengerContinueButton.isDisplayed()
+        boolean isMessengerContinueButtonDisplaying=messengerContinueButton.isDisplayed();
 
         Assert.assertTrue(isMessengerContinueButtonEnable,"is not enable");
         Assert.assertTrue(isMessengerContinueButtonDisplaying,"is not Displaying");
