@@ -3,7 +3,7 @@ package class2;
 public class WebElements_DOM {
 
     /**
-     * Types of Wenelements
+     * Types of Webelements
             * TextBax / Inputbox   >> Type, Clear
             * Button               >> Click
             * Radio Buttons        >> CLick

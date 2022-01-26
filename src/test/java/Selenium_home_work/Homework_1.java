@@ -70,10 +70,10 @@ public class Homework_1 {
 
         //Step 4:
 
-        String findAcctLink= "Find your account an";
+        /** String findAcctLink= "Find your account an";
         By findAccountLinkLocator= By.partialLinkText(findAcctLink);
         WebElement findAccountLinkText= Driver.getDriver().findElement(findAccountLinkLocator);
-        Boolean isFindAccountLinkDisplaying= findAccountLinkText.isDisplayed();
+        boolean isFindAccountLinkDisplaying= findAccountLinkText.isDisplayed();
 
         //boolean findAcctIsDisplay= Driver.getDriver().findElement(By.xpath("//a[text()='Find your account and log in.']")).isDisplayed();
         Assert.assertTrue(isFindAccountLinkDisplaying,"Find account link is not available");
@@ -82,15 +82,29 @@ public class Homework_1 {
 
         String messengerContinueButtonAttValue = "login";
         By messengerContinueButtonLocator= By.name(messengerContinueButtonAttValue);
-        WebElement messengerContinueButton= Driver.getDriver().findElement(messengerContinueButtonLocator);
-        boolean isMessengerContinueButtonEnable = messengerContinueButton.isEnabled();
-        boolean isMessengerContinueButtonDisplaying=messengerContinueButton.isDisplayed();
+        //WebElement messengerContinueButton= Driver.getDriver().findElement(messengerContinueButtonLocator);
+        //boolean isMessengerContinueButtonEnable = messengerContinueButton.isEnabled();
+       // boolean isMessengerContinueButtonDisplaying=messengerContinueButton.isDisplayed();
 
-        Assert.assertTrue(isMessengerContinueButtonEnable,"is not enable");
-        Assert.assertTrue(isMessengerContinueButtonDisplaying,"is not Displaying");
+       // Assert.assertTrue(isMessengerContinueButtonEnable,"is not enable");
+       // Assert.assertTrue(isMessengerContinueButtonDisplaying,"is not Displaying");
 
         //Step 6:
         // I'm not able to find a good attribute for checkbox. I will keep working on this and send it over to you.
+
+       //Driver.getDriver().findElement(By.xpath("//input[@name='persistent']")).click();
+        */
+
+       Driver.getDriver().findElement(By.id("email")).sendKeys("email@mail.com");
+
+       /** String EmailOrPhoneNumberValue="email";
+        By EmailOrPhoneNumberLocator = By.id(EmailOrPhoneNumberValue);
+        WebElement EmailOrPhoneNumberWebElement = Driver.getDriver().findElement(EmailOrPhoneNumberLocator);
+        EmailOrPhoneNumberWebElement.sendKeys("email@rmail.com");*/
+
+       Driver.getDriver().findElement(By.name("pass")).sendKeys("12345");
+
+       Driver.getDriver().findElement(By.name("persistent")).click();
 
 
 
